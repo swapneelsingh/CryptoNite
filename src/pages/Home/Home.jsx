@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./Home.css";
 import { CoinContext } from "../../context/CoinContext";
+import { Link } from "react-router-dom";
 
 function Home() {
   const { allCoins, currency } = useContext(CoinContext);
@@ -29,12 +30,12 @@ function Home() {
   return (
     <div className="home">
       <div className="hero">
-        <h1>
+        <h1 class="shiny-title">
           RealTime <br /> Crypto Exchange
         </h1>
         <p>
-          We Welcome you at the largest Crypto tracer. Please signup to explore
-          more on crypto currency.
+          Step into the future with <strong>CryptoNite</strong>.  
+          Track, trade, and conquer the crypto universe
         </p>
         <form action="" onSubmit={searchHandler}>
           <input
@@ -62,7 +63,7 @@ function Home() {
           <p className="market-cap">Market Cap</p>
         </div>
         {displayCoin.slice(0, 10).map((item, index) => (
-          <div className="table-layout" key={index}>
+          <Link to={`/coin/${item.id}`} className="table-layout" key={index}>
             <p>{item.market_cap_rank}</p>
             <div>
               <img src={item.image} alt="" />
@@ -79,7 +80,7 @@ function Home() {
             <p className="market-cap">
               {currency.symbol} {item.market_cap.toLocaleString()}
             </p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

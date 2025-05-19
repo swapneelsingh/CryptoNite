@@ -2,13 +2,37 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 10%;
-  color: #ddd;
-  border-bottom: 2px solid #3c3c3c;
+  padding: 0px 10%;
+  color: #ffffff;
+  background-color: #565655;
+  /* border-bottom: 2px solid #181717; */
 }
 
-.navbar .logo {
-  width: max(12vw, 140px);
+/* .nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+} */
+/* 
+.navbar ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */
+
+.navbar .logo2 {
+  /* width: max(12vw, 140px);
+  max-width: 160px;
+  height: auto;
+   */
+  width: max(12vw, 160px); /* Decreased from 12vw to 8vw */
+  max-width: 90px;       /* Decreased from 160px */
+  height: auto;
+  padding: 0;
+  margin: 0;
+
 }
 
 .navbar ul {
@@ -36,7 +60,7 @@
 }
 
 .navbar option {
-  background-color: #09005c;
+  background-color: #565655;
   color: white;
 }
 
@@ -48,7 +72,7 @@
   border-radius: 20px;
   font-size: 15px;
   font-weight: 500;
-  color: #393939;
+  color: #5d5959;
   background: white;
   border: none;
   cursor: pointer;

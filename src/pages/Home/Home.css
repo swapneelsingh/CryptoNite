@@ -19,7 +19,7 @@
 
 .hero p {
   width: 75%;
-  color: #e3e3e3;
+  color: #ffffff;
   line-height: 1.5;
 }
 
@@ -46,7 +46,7 @@
 .hero button {
   border: none;
   /* background-color: #f1ff27; */
-  background-color: #ff4e50;
+  background-color: #06ec66;
 
   color: black;
   font-size: 16px;
@@ -58,7 +58,7 @@
 .crypto-table {
   max-width: 800px;
   margin: auto;
-  background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
+  background: linear-gradient(#565655, #565655, #565655);
   border-radius: 15px;
 }
 
@@ -89,12 +89,12 @@
 } 
 
 .table-layout .green{
-  color: #006400;
+  color: #01fd01;
   text-align: center;
 }
 
 .table-layout .red{
-  color: #8B0000;
+  color: #f90000;
   text-align: center;
 }
 
@@ -120,3 +120,67 @@
     width: 100px;
   }
 }
+
+.shiny-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  /* background: linear-gradient(90deg, #f2ff00, #00ff00);
+   */
+  background: linear-gradient(90deg, #f2ff00, #00ff1e);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  animation: glow 4s ease-in-out infinite alternate;
+
+   /* animation: shine 0s linear infinite, glow 5s ease-in-out infinite; */
+  text-align: center;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 200% center;
+  }
+}
+
+/* @keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 2px #ffffff, 0 0 4px #ff7700;
+  }
+  50% {
+    text-shadow: 0 0 2px #00ff4c, 0 0 6px #e9e9e9;
+  }
+} */
+ 
+/* #01ff52 , #66c2cc*/
+/* 
+.shiny-title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  transform: skewX(-25deg);
+  animation: sweep 3s infinite;
+  pointer-events: none;
+}
+
+@keyframes sweep {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+} */
+

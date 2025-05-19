@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import "./Navbar.css";
-import logo from "../../assets/logo.png";
+import logo2 from "../../assets/logo2.png";
 import upRightArrow from "../../assets/upRightArrow.png";
 import { CoinContext } from "../../context/CoinContext";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const { setCurrency } = useContext(CoinContext);
@@ -30,9 +31,11 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <img src={logo} alt="" className="logo" />
+      <Link to={'/'}>
+        <img src={logo2} alt="" className="logo2" />
+      </Link>
       <ul>
-        <li>Home</li>
+        <Link to={'/'}><li>Home</li></Link>
         <li>Features</li>
         <li>Pricing</li>
         <li>Blog</li>
